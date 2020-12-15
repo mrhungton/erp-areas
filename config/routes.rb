@@ -4,7 +4,7 @@ Erp::Areas::Engine.routes.draw do
 			resources :countries do
 				collection do
 					post 'list'
-					get 'dataselect'
+					post 'dataselect'
 					delete 'delete_all'
 					put 'archive_all'
 					put 'unarchive_all'
@@ -15,7 +15,7 @@ Erp::Areas::Engine.routes.draw do
 			resources :states do
 				collection do
 					post 'list'
-					get 'dataselect'
+					post 'dataselect'
 					delete 'delete_all'
 					put 'archive_all'
 					put 'unarchive_all'
@@ -26,7 +26,7 @@ Erp::Areas::Engine.routes.draw do
 			resources :districts do
 				collection do
 					post 'list'
-					get 'dataselect'
+					post 'dataselect'
 				end
 			end
 		end
